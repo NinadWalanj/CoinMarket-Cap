@@ -34,10 +34,6 @@ const darkTheme = createTheme({
   },
 });
 
-const onClick = () => {
-  window.location.replace("https://etherwallet2023.netlify.app/");
-};
-
 function Header() {
   const classes = useStyles();
   const { currency, setCurrency } = CryptoState();
@@ -56,7 +52,10 @@ function Header() {
             >
               CoinMarket Cap
             </Typography>
-            <Button variant="contained" onClick={onClick}>
+            <Button
+              href="https://etherwallet2023.netlify.app/"
+              variant="contained"
+            >
               EtherWallet
             </Button>
             <Select
